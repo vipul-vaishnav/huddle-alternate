@@ -187,9 +187,19 @@ body {
   word-spacing: 1px;
 }
 
+.footer {
+  background-color: var(--VeryDarkCyan);
+  color: #ffffff;
+}
+
+.footer img {
+  width: 200px;
+}
+
 .attribution {
-  font-size: 11px;
+  font-size: 14px;
   text-align: center;
+  padding: 1.5rem 0;
 }
 
 .attribution a {
