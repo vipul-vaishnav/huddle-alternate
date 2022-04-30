@@ -67,6 +67,38 @@ body {
   background-size: cover;
   background-position: center center;
 }
+
+.header,
+.hero {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3.5rem 0;
+}
+
+.header__logo .header__logo__link {
+  cursor: default;
+}
+
+.header__cta .header__cta__btn {
+  outline: 0;
+  border: 0;
+  font-weight: 700;
+  font-family: inherit;
+  background-color: #ffffff;
+  color: var(--VeryDarkCyan);
+  font-size: 1.6rem;
+  padding: 1.25rem 4.25rem;
+  border-radius: 10rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
