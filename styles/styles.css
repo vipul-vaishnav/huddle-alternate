@@ -48,6 +48,11 @@ input[type="submit"] {
   cursor: pointer;
 }
 
+img {
+  width: 100%;
+  height: 100%;
+}
+
 body {
   font-family: var(--OpenSans);
   font-size: 1.8rem;
@@ -71,6 +76,7 @@ body {
 .header,
 .hero {
   max-width: 1440px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -97,6 +103,88 @@ body {
   border-radius: 10rem;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 0 6rem;
+  gap: 15rem;
+}
+
+.hero__content {
+  display: grid;
+  place-content: center;
+  width: 50%;
+}
+
+.hero__content__title {
+  color: var(--VeryDarkCyan);
+  font-weight: 600;
+  font-size: 4.5rem;
+  line-height: 1.45;
+  /* margin-bottom: 3.5rem; */
+}
+
+.hero__content__text {
+  color: var(--VeryDarkCyan);
+  line-height: 1.5;
+  margin: 3.5rem 0 4.5rem;
+  word-spacing: 1px;
+}
+
+.hero__content__cta {
+  outline: 0;
+  border: 0;
+  font-weight: 700;
+  font-family: inherit;
+  color: #ffffff;
+  background-color: var(--Pink);
+  font-size: 1.6rem;
+  padding: 1.25rem 4.25rem;
+  border-radius: 10rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  /* margin-top: 5rem 0; */
+}
+
+.features {
+  margin: 12rem auto;
+  max-width: 1440px;
+  width: 100%;
+}
+
+.features__block {
+  margin: 5rem auto;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.05) 0px 8px 32px;
+  padding: 5rem;
+  padding-left: 15rem;
+  border-radius: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20rem;
+}
+
+.features__block:nth-child(2n) {
+  flex-direction: row-reverse;
+}
+
+.features__block__heading {
+  color: var(--VeryDarkCyan);
+  font-weight: 600;
+  font-size: 3.25rem;
+  line-height: 1.45;
+  margin-bottom: 2.5rem;
+}
+
+.features__block__text {
+  color: var(--GrayishBlue);
+  line-height: 1.5;
+  /* margin: 3.5rem 0 4.5rem; */
+  word-spacing: 1px;
 }
 
 .attribution {
